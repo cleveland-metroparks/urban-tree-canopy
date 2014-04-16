@@ -1,0 +1,27 @@
+/** choropleth visualization */
+
+#utc_watersheds
+[zoom < 12] [zoom > 9]
+{
+  line-color: #221d68;
+  line-opacity: 0.8;
+  line-width: 2;
+  line-dasharray: 10,10;
+  polygon-opacity: 0.8;
+}
+
+#utc_watersheds [ percent_possible <= 0.61479155909] [zoom < 12] [zoom > 9] {
+   polygon-fill: #BD0026;
+}
+#utc_watersheds [ percent_possible <= 0.52933994073] [zoom < 12] [zoom > 9] {
+   polygon-fill: #F03B20;
+}
+#utc_watersheds [ percent_possible <= 0.48223214945] [zoom < 12] [zoom > 9] {
+   polygon-fill: #FD8D3C;
+}
+#utc_watersheds [ percent_possible <= 0.41627156086] [zoom < 12] [zoom > 9] {
+   polygon-fill: #FECC5C;
+}
+#utc_watersheds [ percent_possible <= 0.37439344437] [zoom < 12] [zoom > 9] {
+   polygon-fill: #FFFFB2;
+}
